@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Eric Johnson"
-baseurl = "https://ericjohnsondev.github.io"
+baseurl = "https://ericjohnsondev.github.io/"
 theme = "kraiklyn"
 
 [params]
