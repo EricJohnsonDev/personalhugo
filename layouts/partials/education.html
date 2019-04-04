@@ -1,0 +1,31 @@
+<h2 class="accordion w-100 text-primary">
+  <i class="fas fa-graduation-cap"></i>
+  {{ .Site.Params.education.title }}
+</h2>
+<div class="panel overflow-hidden">
+  {{ range.Site.Params.education.list }}
+  <dl>
+  
+	<!-- Degree -->
+	<dt class="text-dark expandable">
+	<i class="fas fa-plus-square"></i>
+		{{ .degree }}
+		<span class="secret-msg">(Click to view notable coursework)</span>
+	</dt>
+	
+	<!-- School (link) -->
+	<dd>{{ if .link }}<a class="text-primary" href="{{ .link }}">{{ .college }}</a
+      >{{ else }}</dd> {{ .college }} {{ end }}
+	  
+	<!-- School Location -->
+	<dd  class="text-dark">{{ .location }}</dd>
+	  
+	<!-- Dates -->
+    <dd class="text-dark">{{ .dates }} </dd>
+	
+	<!-- GPA -->
+	<dd class="text-dark">{{ .gpa }} </dd>
+    
+  </dl>
+  {{ end }}
+</div>

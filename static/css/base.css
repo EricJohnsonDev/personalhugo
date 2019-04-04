@@ -1,0 +1,45 @@
+html {
+  width: 100vw;
+}
+.text-primary {
+  color: #21ac4b !important;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Alegreya", serif;
+}
+.zoomlink:hover {
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.accordion {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.panel {
+  max-height: 0;
+  transition: 0.3s ease-out;
+}
+.bg-black {
+  background-color: #252525;
+}
+.secret-msg {
+	background-color: #eee;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	display: none;
+    #margin-top: 10px;
+	margin-left: 2px;
+	position: absolute;
+}
+.expandable {
+	cursor: pointer;
+}
+.expandable:hover .secret-msg {
+	display: inline;
+}
+	

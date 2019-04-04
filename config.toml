@@ -33,28 +33,35 @@ theme = "aafu"
         url = "https://github.com/EricJohnsonDev"
         title = "GitHub"	
 
-	# Experiences #
+	# Professional Experience #
     [params.experiences]
         icon = "fa-briefcase"
-        title = "Experience"
+        title = "Professional Experience"
 
         [[params.jobs.list]]
+		company = "State Farm"
+		link = "https://statefarm.com"
         position = "Software Developer"
         dates = "June 2017 - *Present*"
-		link = "https://statefarm.com"
-        company = "State Farm"
 
         [[params.jobs.list]]
+		company = "Millikin University Performance Consulting (MUPC)"
+		link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
         position = "Technical Consultant/Co-Founder"
         dates = "January 2016 - May 2017"
-		link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
-        company = "Millikin University Performance Consulting (MUPC)"
-		
+			
 		[[params.jobs.list]]
+		company = "State Farm"
+		link = "https://statefarm.com"
         position = "Software Developer - Intern"
         dates = "Summer 2016"
-		link = "https://statefarm.com"
-        company = "State Farm"
+			
+		[[params.jobs.list]]
+		company = "Von Bergen's Country Market"
+        position = "Farm Hand"
+        dates = "2010 - 2015 (Seasonal)"
+		link = "http://www.vonbergens.com/"
+        
 		
     # Education #
     [params.education]
@@ -62,22 +69,11 @@ theme = "aafu"
 
         [[params.education.list]]
         degree = "B.S. in Information Systems"
-        college = "Millikin University"
-        dates = "2013 - 2017"
+        college = "Millikin University (Decatur, IL)"
 		link = "https://millikin.edu/"
-        #thesis_title = "Effect of humans on other humans: a study of human behavior."
-        #thesis_link = "#"
-
-    # Publication #
-    [params.publication]
-        title = "Publications"
-
-        [[params.publication.list]]
-        title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        authors = "F Last, F Second, P secondary"
-        date = "2018"
-        journal = "Journal of Field 52 (16), 9033-9044"
-        link = "#"
+		#location = "Decatur, IL"
+        dates = "May 2017"
+		gpa = "GPA: 3.74/4.00"	
 
     # Projects #
     [params.projects]
