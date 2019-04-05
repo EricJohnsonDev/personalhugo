@@ -2,16 +2,20 @@
   <i class="fas fa-graduation-cap"></i>
   {{ .Site.Params.education.title }}
 </h2>
+
 <div class="panel overflow-hidden">
   {{ range.Site.Params.education.list }}
   <dl>
   
 	<!-- Degree -->
-	<dt class="text-dark expandable">
-	<i class="fas fa-plus-square"></i>
-		{{ .degree }}
-		<span class="secret-msg">(Click to view notable coursework)</span>
-	</dt>
+	<div class="popup">
+	<span class="secret-msg">(Click to view notable coursework)</span>
+		<dt class="text-dark">
+		<i class="fas fa-plus-circle spinny"></i>
+			{{ .degree }}
+			<!-- Dove news: https://herald-review.com/news/local/decatur-area-homeless-population-down-but-problem-areas-remain/article_73692cf6-580d-5f90-9fc0-f1c6e542a6ad.html -->
+		</dt>
+	</div>
 	
 	<!-- School (link) -->
 	<dd>{{ if .link }}<a class="text-primary" href="{{ .link }}">{{ .college }}</a

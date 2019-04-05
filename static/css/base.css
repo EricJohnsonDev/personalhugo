@@ -23,23 +23,39 @@ h3 {
 .panel {
   max-height: 0;
   transition: 0.3s ease-out;
+  z-index: 0;
 }
 .bg-black {
   background-color: #252525;
 }
-.secret-msg {
-	background-color: #eee;
-	border: 1px solid #eee;
-	border-radius: 5px;
-	display: none;
-    #margin-top: 10px;
-	margin-left: 2px;
-	position: absolute;
-}
-.expandable {
+.popup {
+	position: relative;
+    display: inline-block;
 	cursor: pointer;
 }
-.expandable:hover .secret-msg {
-	display: inline;
+.popup .secret-msg {
+	visibility: hidden;
+	background-color: #eee;
+	border-radius: 5px;
+	text-align: center;	
+	position: absolute;
+	z-index: 1;
+    left: 110%;
+	width: 100%;  #Need to update for mobile
+}
+.popup:hover .secret-msg {
+	visibility: visible;
+}
+.popup:hover .spinny {
+	-webkit-animation: spin 2.5s linear infinite;
+	animation: spin 2.5s linear infinite
+}
+@-webkit-keyframes spin {
+  from {transform: rotate(0deg);} 
+  to {transform: rotate(360deg);}
+}
+@keyframes spin {
+  from {transform: rotate(0deg);} 
+  to {transform: rotate(360deg);}
 }
 	
