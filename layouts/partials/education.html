@@ -1,22 +1,3 @@
-<!-- OVERLAY -->
-<div id="edu-overlay" class="overlay">
-<i class="fas fa-times fa-7x overlay-x" onclick="overlayoff()"></i>
-<!-- TODO externalize overlay text into its own file ? -->
-	<div class="overlay-text">
-	<p class="h-overlay">Course Highlights</p>
-	<hr>
-		<ul>
-		<li>Systems Analysis & Design
-		<li>Web Application Development
-		<li>Application Integration
-		<li>IT Infrastructure
-		<li>Business Intelligence & Big Data
-		<li>Database Application Development
-		</ul>
-	</div>
-</div>
-
-<!-- MAIN PAGE -->
 <h2 class="accordion w-100 text-primary">
   <i class="fas fa-graduation-cap"></i>
   {{ .Site.Params.education.title }}
@@ -26,8 +7,17 @@
   {{ range.Site.Params.education.list }}
   <dl>
   
+<!-- OVERLAY -->
+<div id="edu-overlay" class="overlay">
+<i class="fas fa-times fa-7x overlay-x" onclick="overlayoff('edu')"></i>
+<!-- TODO externalize overlay text into its own file -->
+	<div class="overlay-text">
+	{{ .details | markdownify }}
+	</div>
+</div>
+  
 	<!-- Degree -->
-	<div class="popup" onclick="overlayon()">
+	<div class="popup" onclick="overlayon('edu')">
 	<span class="secret-msg">(Click to view course highlights)</span>
 		<dt class="text-dark">
 		<i class="fas fa-plus-circle spinny"></i>
@@ -55,11 +45,11 @@
 
 <!-- TODO Extract into js file -->
 <script>
-function overlayon() {
-  document.getElementById("edu-overlay").style.display = "block";
+function overlayon(section) {
+  document.getElementById(section + "-overlay").style.display = "block";
 }
 
-function overlayoff() {
-  document.getElementById("edu-overlay").style.display = "none";
+function overlayoff(section) {
+  document.getElementById(section + "-overlay").style.display = "none";
 }
 </script>

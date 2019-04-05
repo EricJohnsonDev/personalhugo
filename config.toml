@@ -43,24 +43,36 @@ theme = "aafu"
 		link = "https://statefarm.com"
         position = "Software Developer"
         dates = "June 2017 - *Present*"
+		details = """
+		details current sf
+		"""
 
         [[params.jobs.list]]
 		company = "Millikin University Performance Consulting (MUPC)"
 		link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
         position = "Technical Consultant/Co-Founder"
         dates = "January 2016 - May 2017"
+		details = """
+		details mupc
+		"""
 			
 		[[params.jobs.list]]
 		company = "State Farm"
 		link = "https://statefarm.com"
         position = "Software Developer - Intern"
         dates = "Summer 2016"
+		details = """
+		details intern sf
+		"""
 			
 		[[params.jobs.list]]
 		company = "Von Bergen's Country Market"
         position = "Farm Hand"
         dates = "2010 - 2015 (Seasonal)"
 		link = "http://www.vonbergens.com/"
+		details = """
+		details vbergs
+		"""
         
 		
     # Education #
@@ -68,12 +80,23 @@ theme = "aafu"
         title = "Education"
 
         [[params.education.list]]
-        degree = "B.S. in Information Systems"
+		degree = "B.S. in Information Systems"
         college = "Millikin University (Decatur, IL)"
 		link = "https://millikin.edu/"
 		#location = "Decatur, IL"
         dates = "May 2017"
-		gpa = "GPA: 3.74/4.00"	
+		gpa = "GPA: 3.74/4.00"
+		
+		details = """
+		Course Highlights 
+		 - Systems Analysis & Design
+		 - Web Application Development
+		 - Application Integration
+		 - IT Infrastructure
+		 - Business Intelligence & Big Data
+		 - Database Application Development
+		"""
+        
 
     # Projects #
     [params.projects]
