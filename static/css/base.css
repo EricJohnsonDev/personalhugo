@@ -28,6 +28,9 @@ h3 {
 .bg-black {
   background-color: #252525;
 }
+
+/* HELPFUL POPUP */
+
 .popup {
 	position: relative;
     display: inline-block;
@@ -41,14 +44,65 @@ h3 {
 	position: absolute;
 	z-index: 1;
     left: 110%;
-	width: 100%;  #Need to update for mobile
+	width: 100%;  # TODO update for mobile
 }
 .popup:hover .secret-msg {
 	visibility: visible;
+	-webkit-animation: fadein 0.5s;
+	animation: fadein 0.5s;
 }
 .popup:hover .spinny {
 	-webkit-animation: spin 2.5s linear infinite;
-	animation: spin 2.5s linear infinite
+	animation: spin 2.5s linear infinite;
+}
+
+/* OVERLAY */
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+.h-overlay {
+	font-size: 2em;
+	text-align: center;
+	font-family: "Alegreya", serif;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  font-size: 2em;
+  color: white;
+  background-color: #666; /* Six!  Six six!  The number of the beast! */
+  border-radius: 5px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.overlay-x {
+	color: #555;  /* Five!  Five five!  The, uh... number of the trooper? */
+	position: absolute;
+	right: 0%;
+	cursor: pointer;
+}
+
+/* ANIMATION */
+
+@-webkit-keyframes fadein {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+@keyframes fadein {
+  from {opacity: 0;} 
+  to {opacity: 1;}
 }
 @-webkit-keyframes spin {
   from {transform: rotate(0deg);} 
