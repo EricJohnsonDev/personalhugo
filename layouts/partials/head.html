@@ -31,5 +31,15 @@
 
   <script src="{{ .Site.BaseURL }}/js/themes.js"></script>
   <script src="{{ .Site.BaseURL }}/js/toggleTheme.js"></script>
+  <!-- TODO Extract into js file -->
+<script>
+function overlayon(section) {
+  document.getElementById(section).style.display = "block";
+}
+
+function overlayoff(section) {
+  document.getElementById(section).style.display = "none";
+}
+</script>
 
 </head>

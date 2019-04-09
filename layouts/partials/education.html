@@ -8,8 +8,8 @@
   <dl>
   
 <!-- OVERLAY -->
-<div id="edu-overlay" class="overlay">
-<i class="fas fa-times fa-7x overlay-x" onclick="overlayoff('edu')"></i>
+<div id={{ .id }} class="overlay">
+<i class="fas fa-times fa-7x overlay-x" onclick="overlayoff({{ .id }})"></i>
 <!-- TODO externalize overlay text into its own file -->
 	<div class="overlay-text">
 	{{ .details | markdownify }}
@@ -17,7 +17,7 @@
 </div>
   
 	<!-- Degree -->
-	<div class="popup" onclick="overlayon('edu')">
+	<div class="popup" onclick="overlayon({{ .id }})">
 	<span class="secret-msg">(Click to view course highlights)</span>
 		<dt class="text-dark">
 		<i class="fas fa-plus-circle spinny"></i>
@@ -42,14 +42,3 @@
   </dl>
   {{ end }}
 </div>
-
-<!-- TODO Extract into js file -->
-<script>
-function overlayon(section) {
-  document.getElementById(section + "-overlay").style.display = "block";
-}
-
-function overlayoff(section) {
-  document.getElementById(section + "-overlay").style.display = "none";
-}
-</script>

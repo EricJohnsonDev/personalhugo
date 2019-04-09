@@ -23,7 +23,7 @@ h3 {
 .panel {
   max-height: 0;
   transition: 0.3s ease-out;
-  z-index: 0;
+  #z-index: 0;
 }
 .bg-black {
   background-color: #252525;
@@ -42,9 +42,12 @@ h3 {
 	background-color: #eee;
 	border-radius: 5px;
 	position: absolute;
-	z-index: 1;
+	#z-index: 1;
     left: 100%;
 	width: 112%;
+}
+.popup.fullwidth {
+	width: 100%;
 }
 #jobexp:hover {
 	background-color: #eee;
