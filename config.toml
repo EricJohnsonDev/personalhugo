@@ -44,13 +44,7 @@ theme = "aafu"
 		link = "https://statefarm.com"
         position = "Software Developer"
         dates = "June 2017 - *Present*"
-		details = """
-		Primary Responsibilities
-		 - Currently a technical coach in the 'Dojo', assisting multiple dev teams migrate apps (services & UIs) from State Farm's internal cloud platform to Pivotal Cloud Foundry
-		 - Back-end developer of web-based applications primarily using Java, Spring, and Git SCM
-         - Member of an Agile team utilizing Scrum and Continuous Delivery/Continuous Integration practices
-         - Cross-trained in full-stack development, including familiarity with Javascript, scripting, automated testing, and Linux server administration
-		"""
+		details = "experience/04-sf.html"
 
         [[params.jobs.list]]
 		id = "job2"
@@ -58,13 +52,7 @@ theme = "aafu"
 		link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
         position = "Technical Consultant/Co-Founder"
         dates = "January 2016 - May 2017"
-		details = """
-		Primary Responsibilities
-		 - Co-founder of student-run IT consulting company serving local businesses
-         - Using skills learned in the classroom to professionally serve multiple clients
-         - Building non-technical skills through communication with clients & project documentation
-         - Practicing leadership skills through project & business management
-		"""
+		details = "experience/03-mupc.html"
 			
 		[[params.jobs.list]]
 		id = "job3"
@@ -72,12 +60,7 @@ theme = "aafu"
 		link = "https://statefarm.com"
         position = "Software Developer - Intern"
         dates = "Summer 2016"
-		details = """
-		Primary Responsibilities
-		 - Created a web dashboard on a small, autonomous team using Agile development practices
-         - Primarily worked with Java, SQL (postgres, & Ember.js
-         - Built professional experience through scrum meetings & project showcases
-		"""
+		details = "experience/02-sf-intern.html"
 			
 		[[params.jobs.list]]
 		id = "job4"
@@ -85,11 +68,7 @@ theme = "aafu"
         position = "Farm Hand"
         dates = "2010 - 2015 (Seasonal)"
 		link = "http://www.vonbergens.com/"
-		details = """
-		Primary Responsibilities
-		 - Assisted all customers find, inspect, carry, etc. home-grown produce
-		 - Cleaned, decorated, prepared produce, ran the cash register, re-stocked, took phone calls, babysat the Von Bergen grandchildren... It was a new adventure everyday!
-		"""
+		details = "experience/01-vonbergens.html"
         
 		
     # Education #

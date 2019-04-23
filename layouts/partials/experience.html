@@ -12,7 +12,8 @@
   <i class="fas fa-times fa-7x overlay-x" onclick="overlayoff({{ .id }})"></i>
   <!-- TODO externalize overlay text into its own file -->
 	<div class="overlay-text">
-	{{ .details | markdownify }}
+	<!-- {{ .details | markdownify }} -->
+	{{ partial .details . }}
 	</div>
   </div> 
   
