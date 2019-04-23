@@ -4,9 +4,23 @@
 </h2>
 
 <div class="panel overflow-hidden h-100 d-block">
-  <dl>
-    {{ range.Site.Params.hobbies.list }}
+{{ range.Site.Params.hobbies.list }}
+  <dl id="selection">
+  
+    	  <!-- OVERLAY -->
+  <div id={{ .id }} class="overlay">
+  <i class="fas fa-times fa-7x overlay-x" onclick="overlayoff({{ .id }})"></i>
+	<div class="overlay-text">
+	{{ partial .details . }}
+	</div>
+  </div> 
+
+  <div class="popup fullwidth" onclick="overlayon({{ .id }})">
     <dd class="text-dark">{{ .hobby }}</dd>
-    {{ end }}
+  </div>
+  
+  <hr>
+	
   </dl>
+  {{ end }}
 </div>

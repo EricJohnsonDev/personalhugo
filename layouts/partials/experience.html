@@ -5,28 +5,29 @@
 
 <div class="panel overflow-hidden h-100 d-block">
   {{ range.Site.Params.jobs.list }} 
-  <dl id="jobexp"> 
+  <dl id="selection"> 
 
   	  <!-- OVERLAY -->
   <div id={{ .id }} class="overlay">
   <i class="fas fa-times fa-7x overlay-x" onclick="overlayoff({{ .id }})"></i>
-  <!-- TODO externalize overlay text into its own file -->
 	<div class="overlay-text">
-	<!-- {{ .details | markdownify }} -->
 	{{ partial .details . }}
 	</div>
   </div> 
   
   <div class="popup fullwidth" onclick="overlayon({{ .id }})">
-  
-  <!-- TODO fix position of the below span -->
-  <!-- <span class="secret-msg">(Click to view job details)</span> -->
+ 
+	<!-- Company -->
     <dt class="text-dark mb-0">
 	<i class="fas fa-plus-circle spinny"></i>
       {{ if .link }}<a class="text-primary" href="{{ .link }}">{{ .company }}</a
       >{{ else }} {{ .company }} {{ end }}
     </dt>
+	
+	<!-- Position Name -->
 	<dd class="text-dark ml-3">{{ .position }}</dd>
+	
+	<!-- Dates -->
     <dd class="text-dark ml-3">{{ .dates | markdownify }}</dd>	
 	</div>
   </dl>

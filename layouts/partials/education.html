@@ -3,28 +3,25 @@
   {{ .Site.Params.education.title }}
 </h2>
 
-<div class="panel overflow-hidden">
+<div class="panel overflow-hidden h-100 d-block">
   {{ range.Site.Params.education.list }}
-  <dl>
+  <dl id="selection">
   
 <!-- OVERLAY -->
 <div id={{ .id }} class="overlay">
 <i class="fas fa-times fa-7x overlay-x" onclick="overlayoff({{ .id }})"></i>
-<!-- TODO externalize overlay text into its own file -->
 	<div class="overlay-text">
-	{{ .details | markdownify }}
+	{{ partial .details . }}
 	</div>
 </div>
   
 	<!-- Degree -->
-	<div class="popup" onclick="overlayon({{ .id }})">
-	<span class="secret-msg">(Click to view course highlights)</span>
+	<div class="popup fullwidth" onclick="overlayon({{ .id }})">
 		<dt class="text-dark">
 		<i class="fas fa-plus-circle spinny"></i>
 			{{ .degree }}
 			<!-- Dove news: https://herald-review.com/news/local/decatur-area-homeless-population-down-but-problem-areas-remain/article_73692cf6-580d-5f90-9fc0-f1c6e542a6ad.html -->
 		</dt>
-	</div>
 	
 	<!-- School (link) -->
 	<dd>{{ if .link }}<a class="text-primary" href="{{ .link }}">{{ .college }}</a
@@ -38,6 +35,7 @@
 	
 	<!-- GPA -->
 	<dd class="text-dark">{{ .gpa }} </dd>
+	</div>
     
   </dl>
   {{ end }}

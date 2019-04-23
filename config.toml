@@ -83,17 +83,7 @@ theme = "aafu"
 		#location = "Decatur, IL"
         dates = "May 2017"
 		gpa = "GPA: 3.74/4.00"
-		
-		details = """
-		Course Highlights 
-		 - Systems Analysis & Design
-		 - Web Application Development
-		 - Application Integration
-		 - IT Infrastructure
-		 - Business Intelligence & Big Data
-		 - Database Application Development
-		"""
-        
+		details = "education/mu-infosys.html"   
 
     # Projects #
     [params.projects]
@@ -111,11 +101,11 @@ theme = "aafu"
         title = "Skills"
 
         [[params.skills.list]]
-        skill = "Java, Javascript (React), HTML, CSS, Groovy, Bash"
+        skill = "Java, Javascript (React.js), HTML, CSS, Groovy, Bash"
         #skillrating = 90
                 
         [[params.skills.list]]
-        skill = "Spring, Springboot, Jenkins, Git, Linux Administration"
+        skill = "Spring, Springboot, Jenkins, Git SCM, Linux Administration"
         #skillrating = 80
 		
         [[params.skills.list]]
@@ -129,11 +119,22 @@ theme = "aafu"
     [params.hobbies]
         title = "Hobbies"
 		
-        [[params.hobbies.list]]		
+        [[params.hobbies.list]]
+		id = "hobby01"
 		hobby = "Music"
+		details = "hobbies/music.html"
 		
-        [[params.hobbies.list]]		
+        [[params.hobbies.list]]
+		id = "hobby02"
 		hobby = "Running"
+		details = "hobbies/running.html"
 
-        [[params.hobbies.list]]		
+        [[params.hobbies.list]]
+		id = "hobby03"
 		hobby = "Disc Golf"
+		details = "hobbies/disc-golf.html"
+		
+		[[params.hobbies.list]]
+		id = "hobby04"
+		hobby = "Gaming"
+		details = "hobbies/gaming.html"

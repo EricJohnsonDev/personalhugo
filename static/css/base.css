@@ -49,15 +49,15 @@ h3 {
 .popup.fullwidth {
 	width: 100%;
 }
-#jobexp:hover {
+#selection:hover {
 	background-color: #eee;
 	cursor: pointer;
 }
-#jobexp:hover .spinny {
+#selection:hover .spinny {
 	-webkit-animation: spin 2.5s linear infinite;
 	animation: spin 2.5s linear infinite;
 }
-#jobexp:hover .secret-msg {
+#selection:hover .secret-msg {
 	visibility: visible;
 	-webkit-animation: fadein 0.5s;
 	animation: fadein 0.5s;
