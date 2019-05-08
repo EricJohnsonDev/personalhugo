@@ -107,7 +107,7 @@ h3 {
   -ms-transform: translate(-50%,-50%);
 }
 .overlay-x {
-	color: #555;
+	color: #888;
 	position: absolute;
 	right: 0%;
 	cursor: pointer;

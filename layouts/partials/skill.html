@@ -1,17 +1,33 @@
 <h2 class="accordion w-100 text-primary">
-  <i class="fas {{ .Site.Params.skills.icon }}"></i>
-  {{ .Site.Params.skills.title }}
+  <i class="fas fa-cogs"></i>
+  Skills
 </h2>
 <div class="panel overflow-hidden">
-  {{ range.Site.Params.skills.list }}
-  <code>{{ .skill }}</code>
-  <!-- Adds skill bar... confidence level?  Came with theme, not yet sure how to best use it -->
-  <!-- <div class="rounded w-100 bg-secondary border border-secondary mt-1 mb-3">
-    <div
-      class="card bg-success"
-      style="width: {{ .skillrating }}%; height:15px;"
-    ></div>
-  </div> -->
+  <h5>Proficient:</h5>
+  <ul>
+	<li>Spring</li>
+	<li>Springboot</li>
+	<li>Java</li>
+	<li>Git SCM</li>
+	<li>HTML</li>
+	<li>Pivotal Cloud Foundry</li>
+	<li>Agile development practices</li>
+  </ul>
+  
   <hr>
-  {{ end }}
+  
+  <h5>Familiar:</h5>
+  <ul>
+	<li>Golang</li>
+	<li>Groovy</li>
+	<li>Bash scripting</li>
+	<li>Javascript (React.js)</li>
+	<li>Jenkins pipeline automation</li>
+	<li>Linux administration</li>
+	<li>Database administration</li>
+	<li>PostgreSQL</li>
+	<li>CSS</li>
+	<li>Bootstrap</li>
+  </ul>
+  <hr>
 </div>

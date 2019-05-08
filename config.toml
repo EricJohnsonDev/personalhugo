@@ -7,14 +7,14 @@ theme = "aafu"
     title = "Eric Johnson - WIP"
     author = "Eric Johnson" # Alt-text for profile
     description = "params description"
-    copyright = "Hugo theme"
+    copyright = "Theme based on"
     copyright_link = "#"
 
     # Profile #
     [params.profile]
         name = "Eric Johnson"
-		tagline = "Software Dev"
-		location = "Bloomington IL"
+		tagline = "Software Developer"
+		location = "Bloomington, IL"
         photo = "profile.jpg"
 
     # Social Links #
@@ -51,7 +51,7 @@ theme = "aafu"
 		company = "Millikin University Performance Consulting (MUPC)"
 		link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
         position = "Technical Consultant/Co-Founder"
-        dates = "January 2016 - May 2017"
+        dates = "August 2016 - May 2017"
 		details = "experience/03-mupc.html"
 			
 		[[params.jobs.list]]
@@ -59,7 +59,7 @@ theme = "aafu"
 		company = "State Farm"
 		link = "https://statefarm.com"
         position = "Software Developer - Intern"
-        dates = "Summer 2016"
+        dates = "May 2016 - August 2016"
 		details = "experience/02-sf-intern.html"
 			
 		[[params.jobs.list]]
@@ -94,26 +94,6 @@ theme = "aafu"
         title = "This site! :D"
         url = "ericjohnsondev.github.io"
         #description = "Description of the project"
-
-    # Skills #
-    [params.skills]
-        icon = "fa-cogs"
-        title = "Skills"
-
-        [[params.skills.list]]
-        skill = "Java, Javascript (React.js), HTML, CSS, Groovy, Bash"
-        #skillrating = 90
-                
-        [[params.skills.list]]
-        skill = "Spring, Springboot, Jenkins, Git SCM, Linux Administration"
-        #skillrating = 80
-		
-        [[params.skills.list]]
-        skill = "Pivotal Cloud Foundry"
-        #skillrating = 50
-		
-		[[params.skills.list]]
-        skill = "Agile Development"
 		
 	# Hobbies #
     [params.hobbies]
