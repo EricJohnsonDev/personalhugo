@@ -3,118 +3,122 @@ title = "Eric Johnson"
 baseurl = "https://ericjohnsondev.github.io/"
 theme = "aafu"
 
-[params]
-    title = "Eric Johnson - WIP"
-    author = "Eric Johnson" # Alt-text for profile
-    description = "params description"
-    copyright = "Theme based on"
-    copyright_link = "#"
+  [params]
+  title = "Eric Johnson - WIP"
+  author = "Eric Johnson"
+  description = "params description"
+  copyright = "Theme based on"
+  copyright_link = "#"
 
-    # Profile #
-    [params.profile]
-        name = "Eric Johnson"
-		tagline = "Software Developer"
-		location = "Bloomington, IL"
-        photo = "profile.jpg"
+  # Profile #
+  [params.profile]
+  name = "Eric Johnson"
+  tagline = "Software Developer"
+  location = "Bloomington, IL"
+  photo = "profile.jpg"
 
-    # Social Links #
-    [params.social]
-        title = "Links"
+  # Social Links #
+  [params.social]
+  title = "Links"
 
-        [[params.social.list]]
-        class = "fab"
-        icon = "fa-linkedin-in"
-        url = "https://www.linkedin.com/in/eric-johnson-607b34b3/"
-        title = "LinkedIn"
+  [[params.social.list]]
+  class = "fab"
+  icon = "fa-linkedin-in"
+  url = "https://www.linkedin.com/in/eric-johnson-607b34b3/"
+  title = "LinkedIn"
 
-        [[params.social.list]]
-        class = "fab"
-        icon = "fa-github"
-        url = "https://github.com/EricJohnsonDev"
-        title = "GitHub"	
+  [[params.social.list]]
+  class = "fab"
+  icon = "fa-github"
+  url = "https://github.com/EricJohnsonDev"
+  title = "GitHub"
 
-	# Professional Experience #
-    [params.experiences]
-        icon = "fa-briefcase"
-        title = "Professional Experience"
+  # Professional Experience #
+  [params.experiences]
+  icon = "fa-briefcase"
+  title = "Professional Experience"
 
-        [[params.jobs.list]]
-		id = "job1"
-		company = "State Farm"
-		link = "https://statefarm.com"
-        position = "Software Developer"
-        dates = "June 2017 - *Present*"
-		details = "experience/04-sf.html"
+  [[params.jobs.list]]
+	id = "job1"
+	company = "State Farm"
+	link = "https://statefarm.com"
+  position = "Software Developer"
+  dates = "June 2017 - *Present*"
+	details = "experience/04-sf.html"
 
-        [[params.jobs.list]]
-		id = "job2"
-		company = "Millikin University Performance Consulting (MUPC)"
-		link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
-        position = "Technical Consultant/Co-Founder"
-        dates = "August 2016 - May 2017"
-		details = "experience/03-mupc.html"
-			
-		[[params.jobs.list]]
-		id = "job3"
-		company = "State Farm"
-		link = "https://statefarm.com"
-        position = "Software Developer - Intern"
-        dates = "May 2016 - August 2016"
-		details = "experience/02-sf-intern.html"
-			
-		[[params.jobs.list]]
-		id = "job4"
-		company = "Von Bergen's Country Market"
-        position = "Farm Hand"
-        dates = "2010 - 2015 (Seasonal)"
-		link = "http://www.vonbergens.com/"
-		details = "experience/01-vonbergens.html"
-        
-		
-    # Education #
-    [params.education]
-        title = "Education"
+  [[params.jobs.list]]
+	id = "job2"
+	company = "Millikin University Performance Consulting (MUPC)"
+	link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
+  position = "Technical Consultant/Co-Founder"
+  dates = "August 2016 - May 2017"
+	details = "experience/03-mupc.html"
 
-        [[params.education.list]]
-		id = "edu1"
-		degree = "B.S. in Information Systems"
-        college = "Millikin University (Decatur, IL)"
-		link = "https://millikin.edu/"
-		#location = "Decatur, IL"
-        dates = "May 2017"
-		gpa = "GPA: 3.74/4.00"
-		details = "education/mu-infosys.html"   
+	[[params.jobs.list]]
+	id = "job3"
+	company = "State Farm"
+	link = "https://statefarm.com"
+  position = "Software Developer - Intern"
+  dates = "May 2016 - August 2016"
+	details = "experience/02-sf-intern.html"
 
-    # Projects #
-    [params.projects]
-        icon = "fa-project-diagram"
-        title = "Projects"
+	[[params.jobs.list]]
+	id = "job4"
+	company = "Von Bergen's Country Market"
+  position = "Farm Hand"
+  dates = "2010 - 2015 (Seasonal)"
+	link = "http://www.vonbergens.com/"
+	details = "experience/01-vonbergens.html"
 
-        [[params.projects.list]]
-        title = "This site! :D"
-        url = "ericjohnsondev.github.io"
-        #description = "Description of the project"
-		
-	# Hobbies #
-    [params.hobbies]
-        title = "Hobbies"
-		
-        [[params.hobbies.list]]
-		id = "hobby01"
-		hobby = "Music"
-		details = "hobbies/music.html"
-		
-        [[params.hobbies.list]]
-		id = "hobby02"
-		hobby = "Running"
-		details = "hobbies/running.html"
 
-        [[params.hobbies.list]]
-		id = "hobby03"
-		hobby = "Disc Golf"
-		details = "hobbies/disc-golf.html"
-		
-		[[params.hobbies.list]]
-		id = "hobby04"
-		hobby = "Gaming"
-		details = "hobbies/gaming.html"
+  # Education #
+  [params.education]
+  title = "Education"
+
+  [[params.education.list]]
+	id = "edu1"
+	degree = "B.S. in Information Systems"
+  college = "Millikin University (Decatur, IL)"
+	link = "https://millikin.edu/"
+  dates = "May 2017"
+	gpa = "GPA: 3.74/4.00"
+	details = "education/mu-infosys.html"
+
+  # Projects #
+  [params.projects]
+  icon = "fa-project-diagram"
+  title = "Projects"
+
+  [[params.projects.list]]
+  title = "This site! :D"
+  url = "ericjohnsondev.github.io"
+  #description = "Description of the project"
+
+# Hobbies #
+  [params.hobbies]
+  title = "Hobbies"
+
+  [[params.hobbies.list]]
+	id = "hobby01"
+	hobby = "Music"
+	details = "hobbies/music.html"
+
+  [[params.hobbies.list]]
+	id = "hobby02"
+	hobby = "Running"
+	details = "hobbies/running.html"
+
+  [[params.hobbies.list]]
+	id = "hobby03"
+	hobby = "Disc Golf"
+	details = "hobbies/disc-golf.html"
+
+	[[params.hobbies.list]]
+	id = "hobby04"
+	hobby = "Gaming"
+	details = "hobbies/gaming.html"
+
+  [[params.hobbies.list]]
+	id = "hobby05"
+	hobby = "Hiking"
+	details = "hobbies/hiking.html"
