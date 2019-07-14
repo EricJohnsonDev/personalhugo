@@ -15,9 +15,11 @@
     {{ partial "footer.html" . }}
   </div>
   <div class="col-md-7 border rounded p-2 mb-4">
+    {{ partial "resume_heading.html" . }}
     {{ partial "experience.html" . }}
     {{ partial "education.html" . }}
-    {{ partial "project.html" . }}
+    <!-- TODO hiding projects until there is more to show -->
+    <!-- {{ partial "project.html" . }} -->
     {{ partial "skill.html" . }}
     {{ partial "hobby.html" . }}
     <script src="{{ .Site.BaseURL }}/js/accordion.js"></script>
