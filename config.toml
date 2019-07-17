@@ -4,7 +4,7 @@ baseurl = "https://ericjohnsondev.github.io/"
 theme = "aafu"
 
   [params]
-  title = "Eric Johnson - WIP"
+  title = "Eric Johnson Dev"
   author = "Eric Johnson"
   description = "params description"
   copyright = "Theme based on"
