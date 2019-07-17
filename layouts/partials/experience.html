@@ -4,33 +4,40 @@
 </h2>
 
 <div class="panel overflow-hidden h-100 d-block">
-  {{ range.Site.Params.jobs.list }} 
-  <dl id="selection"> 
+  {{ range.Site.Params.jobs.list }}
+  <dl id="selection">
 
-  	  <!-- OVERLAY -->
-  <div id={{ .id }} class="overlay">
-  <i class="fas fa-times fa-7x overlay-x" onclick="overlayoff({{ .id }})"></i>
-	<div class="overlay-text">
-	{{ partial .details . }}
-	</div>
-  </div> 
-  
-  <div class="popup fullwidth" onclick="overlayon({{ .id }})">
- 
+  <div id={{ .id }} class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-title-exp" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title-exp">{{ .header }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{ partial .details . }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup fullwidth" data-toggle="modal" data-target={{ printf "#%s" .id }}>
+
 	<!-- Company -->
     <dt class="text-dark mb-0">
 	<i class="fas fa-plus-circle spinny"></i>
       {{ if .link }}<a class="text-primary" href="{{ .link }}" target="_blank">{{ .company }}</a
       >{{ else }} {{ .company }} {{ end }}
     </dt>
-	
+
 	<!-- Position Name -->
 	<dd class="text-dark ml-3">{{ .position }}</dd>
-	
+
 	<!-- Dates -->
-    <dd class="text-dark ml-3">{{ .dates | markdownify }}</dd>	
+    <dd class="text-dark ml-3">{{ .dates | markdownify }}</dd>
 	</div>
   </dl>
   {{ end }}
 </div>
-

@@ -6,37 +6,45 @@
 <div class="panel overflow-hidden h-100 d-block">
   {{ range.Site.Params.education.list }}
   <dl id="selection">
-  
-<!-- OVERLAY -->
-<div id={{ .id }} class="overlay">
-<i class="fas fa-times fa-7x overlay-x" onclick="overlayoff({{ .id }})"></i>
-	<div class="overlay-text">
-	{{ partial .details . }}
-	</div>
+
+<div id={{ .id }} class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-title-edu" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title-edu">{{ .header }}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{ partial .details . }}
+      </div>
+    </div>
+  </div>
 </div>
-  
+
 	<!-- Degree -->
-	<div class="popup fullwidth" onclick="overlayon({{ .id }})">
+	<div class="popup fullwidth" data-toggle="modal" data-target={{ printf "#%s" .id }}>
 		<dt class="text-dark">
 		<i class="fas fa-plus-circle spinny"></i>
 			{{ .degree }}
 			<!-- Dove news: https://herald-review.com/news/local/decatur-area-homeless-population-down-but-problem-areas-remain/article_73692cf6-580d-5f90-9fc0-f1c6e542a6ad.html -->
 		</dt>
-	
+
 	<!-- School (link) -->
 	<dd>{{ if .link }}<a class="text-primary" href="{{ .link }}" target="_blank">{{ .college }}</a
       >{{ else }}</dd> {{ .college }} {{ end }}
-	  
+
 	<!-- School Location -->
 	<dd  class="text-dark">{{ .location }}</dd>
-	  
+
 	<!-- Dates -->
     <dd class="text-dark">{{ .dates }} </dd>
-	
+
 	<!-- GPA -->
 	<dd class="text-dark">{{ .gpa }} </dd>
 	</div>
-    
+
   </dl>
   {{ end }}
 </div>

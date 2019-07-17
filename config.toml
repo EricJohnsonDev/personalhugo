@@ -45,6 +45,7 @@ theme = "aafu"
   position = "Software Developer"
   dates = "June 2017 - *Present*"
 	details = "experience/04-sf.html"
+  header = "Primary Responsibilities/Accomplishments"
 
   [[params.jobs.list]]
 	id = "job2"
@@ -53,6 +54,7 @@ theme = "aafu"
   position = "Technical Consultant/Co-Founder"
   dates = "August 2016 - May 2017"
 	details = "experience/03-mupc.html"
+  header = "Primary Responsibilities"
 
 	[[params.jobs.list]]
 	id = "job3"
@@ -61,6 +63,7 @@ theme = "aafu"
   position = "Software Developer - Intern"
   dates = "May 2016 - August 2016"
 	details = "experience/02-sf-intern.html"
+  header = "Primary Responsibilities"
 
 	[[params.jobs.list]]
 	id = "job4"
@@ -69,6 +72,7 @@ theme = "aafu"
   dates = "2010 - 2015 (Seasonal)"
 	link = "http://www.vonbergens.com/"
 	details = "experience/01-vonbergens.html"
+  header = "Primary Responsibilities"
 
 
   # Education #
@@ -83,6 +87,7 @@ theme = "aafu"
   dates = "May 2017"
 	gpa = "GPA: 3.74/4.00"
 	details = "education/mu-infosys.html"
+  header = "Course Highlights"
 
   # Projects #
   [params.projects]
