@@ -35,7 +35,7 @@ theme = "aafu"
 
   # Professional Experience #
   [params.experiences]
-  icon = "fa-briefcase"
+  icon = "fa-users"
   title = "Professional Experience"
 
   [[params.jobs.list]]
