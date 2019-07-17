@@ -13,16 +13,31 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modal-title-hobby">{{ .hobby }}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           {{ partial .details . }}
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
+
+<!-- Stops any running video if modal is closed, thanks friends:
+    https://stackoverflow.com/a/36313110
+    https://stackoverflow.com/a/22613424 -->
+  <script>
+    $({{ printf "#%s" .id }}).on('hidden.bs.modal', function () {
+      $('.modal-video').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src",el_src);
+      });
+    });
+  </script>
 
   <div class="popup fullwidth" data-toggle="modal" data-target={{ printf "#%s" .id }}>
     <dd class="text-dark">{{ .hobby }}</dd>
