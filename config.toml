@@ -6,7 +6,7 @@ theme = "aafu"
   [params]
   title = "Eric Johnson Dev"
   author = "Eric Johnson"
-  description = "params description"
+  description = "Tales of full-stack developer"
   copyright = "Theme based on"
   copyright_link = "#"
 
