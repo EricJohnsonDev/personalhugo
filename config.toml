@@ -14,7 +14,7 @@ theme = "aafu"
   [params.profile]
   name = "Eric Johnson"
   tagline = "Software Developer"
-  location = "Bloomington, IL"
+  location = "Madison, WI"
   photo = "profile.jpg"
 
   # Social Links #
@@ -43,7 +43,7 @@ theme = "aafu"
 	company = "State Farm"
 	link = "https://statefarm.com"
   position = "Software Developer"
-  dates = "June 2017 - *Present*"
+  dates = "June 2017 - February 2021"
 	details = "experience/04-sf.html"
   header = "Primary Responsibilities/Accomplishments"
 
