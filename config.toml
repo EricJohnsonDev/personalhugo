@@ -4,10 +4,10 @@ baseurl = "https://ericjohnsondev.github.io/"
 theme = "aafu"
 
   [params]
-  title = "Eric Johnson Dev"
+  title = "Eric Johnson"
   author = "Eric Johnson"
-  description = "Tales of full-stack developer"
-  copyright = "Theme based on"
+  description = "Tales of an IT generalist searching for his niche"
+  copyright = "Site theme based on"
   copyright_link = "#"
 
   # Profile #
@@ -23,12 +23,6 @@ theme = "aafu"
 
   [[params.social.list]]
   class = "fab"
-  icon = "fa-linkedin-in"
-  url = "https://www.linkedin.com/in/eric-johnson-607b34b3/"
-  title = "LinkedIn"
-
-  [[params.social.list]]
-  class = "fab"
   icon = "fa-github"
   url = "https://github.com/EricJohnsonDev"
   title = "GitHub"
@@ -40,6 +34,15 @@ theme = "aafu"
 
   [[params.jobs.list]]
 	id = "job1"
+	company = "Electronic Theatre Controls (ETC)"
+	link = "https://www.etcconnect.com/"
+  position = "Product Development Tester"
+  dates = "July 2022 - Present"
+	details = "experience/05-etc.html"
+  header = "Primary Responsibilities"
+
+  [[params.jobs.list]]
+	id = "job2"
 	company = "State Farm"
 	link = "https://statefarm.com"
   position = "Software Developer"
@@ -48,7 +51,7 @@ theme = "aafu"
   header = "Primary Responsibilities/Accomplishments"
 
   [[params.jobs.list]]
-	id = "job2"
+	id = "job3"
 	company = "Millikin University Performance Consulting (MUPC)"
 	link = "https://millikin.edu/ventures/millikin-university-performance-consulting-mupc"
   position = "Technical Consultant/Co-Founder"
@@ -57,23 +60,13 @@ theme = "aafu"
   header = "Primary Responsibilities"
 
 	[[params.jobs.list]]
-	id = "job3"
+	id = "job4"
 	company = "State Farm"
 	link = "https://statefarm.com"
   position = "Software Developer - Intern"
   dates = "May 2016 - August 2016"
 	details = "experience/02-sf-intern.html"
   header = "Primary Responsibilities"
-
-	[[params.jobs.list]]
-	id = "job4"
-	company = "Von Bergen's Country Market"
-  position = "Farm Hand"
-  dates = "2010 - 2015 (Seasonal)"
-	link = "http://www.vonbergens.com/"
-	details = "experience/01-vonbergens.html"
-  header = "Primary Responsibilities"
-
 
   # Education #
   [params.education]
