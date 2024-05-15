@@ -13,8 +13,8 @@ theme = "aafu"
   # Profile #
   [params.profile]
   name = "Eric Johnson"
-  tagline = "Software Developer"
-  location = "Madison, WI"
+  tagline = "IT Generalist"
+  location = "Southeast Wisconsin"
   photo = "profile.jpg"
 
   # Social Links #
@@ -37,7 +37,7 @@ theme = "aafu"
 	company = "Electronic Theatre Controls (ETC)"
 	link = "https://www.etcconnect.com/"
   position = "Product Development Tester"
-  dates = "July 2022 - Present"
+  dates = "July 2022 - March 2024"
 	details = "experience/05-etc.html"
   header = "Primary Responsibilities"
 
@@ -105,18 +105,18 @@ theme = "aafu"
 	id = "hobby02"
 	hobby = "Running"
 	details = "hobbies/running.html"
-
+	
   [[params.hobbies.list]]
 	id = "hobby03"
+	hobby = "Hiking"
+	details = "hobbies/hiking.html"
+
+  [[params.hobbies.list]]
+	id = "hobby04"
 	hobby = "Disc Golf"
 	details = "hobbies/disc-golf.html"
 
-	[[params.hobbies.list]]
-	id = "hobby04"
-	hobby = "Gaming"
-	details = "hobbies/gaming.html"
-
   [[params.hobbies.list]]
 	id = "hobby05"
-	hobby = "Hiking"
-	details = "hobbies/hiking.html"
+	hobby = "Gaming"
+	details = "hobbies/gaming.html"
